@@ -715,7 +715,8 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="single_form mt-30">
-                                <input name="email" type="email" placeholder="Email" required>
+                                <input name="email" type="email" placeholder="Email" required
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                             </div> <!-- single form -->
                         </div>
                         <div class="col-lg-12">
@@ -725,7 +726,7 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="single_form mt-30">
-                                <textarea name="message" placeholder="Message" required></textarea>
+                                <textarea name="message" placeholder="Message" required maxlength="500"></textarea>
                             </div> <!-- single form -->
                         </div>
                         <p class="form-message"></p>
