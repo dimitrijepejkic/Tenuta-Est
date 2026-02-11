@@ -179,6 +179,30 @@ $(function () {
 
     //===== 
 
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("status");
+
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+        const data = new FormData(form);
+
+        fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                status.innerHTML = "✅ Message sent successfully!";
+                form.reset();
+            } else {
+                status.innerHTML = "❌ Oops! Something went wrong.";
+            }
+        }).catch(error => {
+            status.innerHTML = "❌ Network error. Please try again.";
+        });
+    });
 
 
 
