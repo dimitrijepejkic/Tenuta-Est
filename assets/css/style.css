@@ -49,10 +49,18 @@ img {
 
 #menu img {
   max-width: 100%;
-  height: 150px;
+  max-height: 150px;
   object-fit: contain;
   display: block;
 }
+
+.footer_instagram .instagram_image img {
+  /*width: 100%;*/
+  /*height: 100px;*/
+  object-fit: cover;
+  display: block;
+}
+
 
 a:focus,
 input:focus,
