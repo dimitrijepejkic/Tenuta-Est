@@ -49,7 +49,7 @@ img {
 
 #menu img {
   max-width: 100%;
-  max-height: 150px;
+  max-height: 300px;
   object-fit: contain;
   display: block;
 }
@@ -155,6 +155,98 @@ p {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+}
+
+#age-popup {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  z-index: 99999;
+}
+
+.age-box {
+  background: #fff;
+  max-width: 450px;
+  width: 90%;
+  padding: 35px;
+  text-align: center;
+  border-radius: 12px;
+
+  /* Orange and black accent */
+  border-top: 8px solid #ff7a00;
+  border-bottom: 8px solid #000;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+}
+
+.age-box h2 {
+  color: #000;
+  font-weight: 700;
+}
+
+.age-box p {
+  color: #444;
+}
+
+.age-confirm {
+  background: #ff7a00;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.age-confirm:hover {
+  background: #e56d00;
+}
+
+.age-no {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+
+.age-box {
+  text-align: center;
+  padding: 20px;
+}
+
+.age-box h1 {
+  color: #d97706;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.age-box p {
+  color: #d97706;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons button {
+  padding: 14px 40px;
+  border: 2px solid #d97706;
+  background: transparent;
+  color: #d97706;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background: #d97706;
+  color: white;
 }
 
 /*===== All Button Style =====*/
@@ -1447,13 +1539,13 @@ p {
 ===========================*/
 .single_coffee_menu .coffee_menu_image img {
   /* border-radius: 50%; */
-  border: 9px solid #fff;
+  /* border: 9px solid #fff; */
 }
 
 @media (max-width: 767px) {
   .single_coffee_menu .coffee_menu_image img {
     width: 70px;
-    border: 3px solid #fff;
+    /* border: 3px solid #fff; */
   }
 }
 
