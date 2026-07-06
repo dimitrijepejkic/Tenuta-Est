@@ -1962,3 +1962,26 @@ p.form-message.error.form-message.error {
   color: #fff;
   background-color: #E54E1B;
 }
+
+.download-btn-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: #d67b2c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #b8641d;
+  transform: translateY(-2px);
+}
